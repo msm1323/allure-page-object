@@ -6,13 +6,16 @@ package ru.msm.framework;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.extension.ExtendWith;
 import ru.msm.framework.managers.DriverManager;
 import ru.msm.framework.managers.InitManager;
 import ru.msm.framework.managers.PageManager;
 import ru.msm.framework.managers.PropertiesManager;
+import ru.msm.framework.utils.AllureListener;
 
 import static ru.msm.framework.utils.PropertiesConstants.BASE_URL;
 
+@ExtendWith(AllureListener.class)
 public class BaseTestClass {
 
     /**
